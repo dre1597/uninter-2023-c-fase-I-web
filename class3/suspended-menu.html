@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+  </head>
+  <style>
+      ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          width: 150px;
+      }
+
+      /*Agora Vamos posicionar os itens da lista, vamos definir o posicionamento com o valor relative,
+porque depois iremos posicionar os sub-menus na posição absoluta em relação a eles.*/
+
+      ul li {
+          position: relative;
+      }
+
+      /*Agora vamos estilizar os sub-menus. Queremos cada sub-menu ao lado direito do seu elemento pai assim que passarmos o mouse sobre ele.
+Com as propriedades CSS Left e Top podemos posicionar cada item do sub-menu ao lado de seu item pai.
+Definimos o display: none; para que o sub-menu não fique visível por padrão.
+Listagem 5: Posicionando itens do sub-menu*/
+
+      li ul {
+          position: absolute;
+          left: 149px;
+          top: 0;
+          display: none;
+      }
+
+      /*Agora vamos dar uma aparência melhor aos nossos links. É importante definir display:block; para que cada link
+ocupe toda a largura definida para ele na lista.
+Listagem 6: Melhorando aparência dos links*/
+
+      ul li a {
+          display: block;
+          text-decoration: none;
+          color: #E2144A;
+          background: #fff;
+          padding: 5px;
+          border: 1px solid #ccc;
+      }
+
+      ul li a:hover {
+          text-decoration: underline;
+          font-weight: bold;
+          background: #ccc;
+      }
+
+      /*Listagem 8: Exibindo o Submenu*/
+
+      li:hover ul {
+          display: block;
+      }
+  </style>
+  <body>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Nossas Lojas</a></li>
+        </ul>
+      </li>
+    <li><a href="#">Notícias</a></li>
+    <li><a href="#">Contato</a></li>
+    </ul>
+  </body>
+</html>
