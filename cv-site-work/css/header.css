@@ -1,0 +1,5 @@
+.header__nav {
+    & ul {
+        list-style-type: none;
+    }
+}
