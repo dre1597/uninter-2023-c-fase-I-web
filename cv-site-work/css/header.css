@@ -3,3 +3,34 @@
         list-style-type: none;
     }
 }
+
+#header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 10vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+
+    & ul {
+        display: flex;
+        list-style: none;
+
+        & li {
+            margin-right: 1em;
+        }
+
+        & .header__nav-link {
+            display: block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            padding: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
