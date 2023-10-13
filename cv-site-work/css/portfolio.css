@@ -1,0 +1,29 @@
+#portfolio {
+    width: 100%;
+    background: var(--blue);
+    text-align: center;
+
+    & h2 {
+        font-size: 3em;
+        color: var(--white);
+        width: 75%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    & .portfolio__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 3rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 5rem auto;
+
+        & img {
+            display: block;
+            width: 80%;
+            object-fit: fill;
+            height: calc(100% - 4.75rem);
+        }
+    }
+}

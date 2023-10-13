@@ -1,3 +1,21 @@
+#contact {
+    width: 100%;
+    background: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+
+    & .title {
+        font-size: 4em;
+    }
+
+    & .subtitle {
+        font-size: 1.5em;
+    }
+}
+
 form {
     display: flex;
     flex-direction: column;
