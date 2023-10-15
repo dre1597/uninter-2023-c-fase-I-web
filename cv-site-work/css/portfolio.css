@@ -1,6 +1,6 @@
 #portfolio {
     width: 100%;
-    background: var(--blue);
+    background: var(--gray);
     text-align: center;
 
     & h2 {
@@ -8,7 +8,7 @@
         color: var(--white);
         width: 75%;
         margin: 0 auto;
-        padding: 2rem 0;
+        padding: 10vh 0 0;
     }
 
     & .portfolio__container {

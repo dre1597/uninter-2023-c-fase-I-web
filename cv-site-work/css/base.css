@@ -13,6 +13,7 @@
 
 body {
     scroll-behavior: smooth;
+    background: var(--gray);
 }
 
 a {
@@ -22,10 +23,11 @@ a {
 
 .title {
     color: var(--white);
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .subtitle {
+    margin-top: 0.1em;
     color: var(--red);
-    font-size: 2em;
+    font-size: 1.5em;
 }
