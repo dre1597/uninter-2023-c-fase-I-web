@@ -31,6 +31,22 @@
             color: var(--white);
             padding: 1.5rem;
             font-weight: 500;
+
+            &:hover {
+                background-color: var(--blue);
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #header__nav {
+        display: block;
+        position: static;
+        text-align: center;
+
+        & ul {
+            display: block;
         }
     }
 }

@@ -17,6 +17,7 @@
         grid-gap: 3rem;
         width: 100%;
         max-width: 1200px;
+        padding: 0 2rem;
         margin: 5rem auto;
 
         & img {

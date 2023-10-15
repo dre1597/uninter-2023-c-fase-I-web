@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     color: var(--white);
-    padding: 10vh;
+    padding: 10vh 10px;
 
     & form {
         display: flex;
@@ -14,7 +14,6 @@
         align-items: center;
         justify-content: center;
         margin-top: 10px;
-        max-width: 80%;
         width: 80%;
 
         & label {
@@ -41,6 +40,14 @@
             cursor: pointer;
             border-radius: 10px;
             align-self: flex-start;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #contact {
+        & form {
+            width: 90%;
         }
     }
 }
